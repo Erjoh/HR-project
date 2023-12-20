@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
-const InputPassword = ({placeholder}) => {
+const InputPassword = ({placeholder, onChange}) => {
+    const [password, setPassword] = useState<string>('')
     const [isSecondSvgVisible, setSecondSvgVisible] = useState(false);
 
     const handleToggleVisibility = () => {
@@ -9,6 +10,8 @@ const InputPassword = ({placeholder}) => {
     return (
         <div className={'relative'}>
             <input
+                onChange={e => setPassword(e.target.value)}
+                value={password}
                 type={isSecondSvgVisible ? 'text' : 'password'}
                 placeholder={placeholder}
                 className="pl-10 pr-72 px-40 rounded-md bg-white shadow-md h-16 flex-shrink-0 flex items-center"/>

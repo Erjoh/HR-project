@@ -2,11 +2,11 @@ import React from 'react';
 
 const InputJobSearch = () => {
     return (
-        <div>
-            <div className={'relative'}>
-                <input className={'rounded-full pl-16 pr-56 p-4 border-2'} placeholder={'Какую работу ищете?'} type="text"/>
-                <button className={'absolute right-1/ top-1/2 transform -translate-y-1/2 '}>Поиск</button>
-                <span className={'absolute left-2 top-1/2 transform -translate-y-1/2'}>
+        <div className={'container sm:mx-auto'}>
+            <div className={''}>
+                <input className={'rounded-full border-2'} placeholder={'Какую работу ищете?'} type="text"/>
+                <button className={'absolute border bg-custom-500 text-white rounded-full p-3 px-12'}>Поиск</button>
+                <span className={'absolute'}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
   <mask id="mask0_183_388" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
     <rect width="28" height="28" fill="#D9D9D9"/>
