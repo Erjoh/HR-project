@@ -15,7 +15,8 @@ const SignIn = () => {
                         <div className='mt-6 flex flex-col gap-6 relative'>
                             <InputEmail type={'text'} placeholder={'Электронная почта'}/>
                             <InputPassword placeholder={"Введите пароль"}/>
-                            <Link to={'/passwordReset'} className={'flex justify-end'}><span className={'flex text-custom-600 pb-10'}>Забыли пароль?</span></Link>
+                            <Link to={'/passwordReset'} className={'flex justify-end'}><span
+                                className={'flex text-custom-600 pb-10'}>Забыли пароль?</span></Link>
                             <button
                                 className="rounded-full border-2 border-black p-4 shadow-md hover:bg-blue-500 hover:text-white hover:border-blue-500">Войти
                             </button>
