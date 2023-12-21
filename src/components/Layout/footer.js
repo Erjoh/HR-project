@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Button from "./button";
-import InstagramIcon from "./instagramIcon";
-import FacebookIcon from "./facebookIcon";
-import YoutubeIcon from "./youtubeIcon";
-import TwitterIcon from "./twitterIcon";
+import Button from "../button";
+import InstagramIcon from "../instagramIcon";
+import FacebookIcon from "../facebookIcon";
+import YoutubeIcon from "../youtubeIcon";
+import TwitterIcon from "../twitterIcon";
 
 const Footer = () => {
     return (

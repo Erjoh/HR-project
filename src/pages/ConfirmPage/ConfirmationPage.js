@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from "../components/layout";
-import Button from "../components/button";
-import InputNumber from "../components/inputNumber";
-import InputCode from "../components/inputCode";
+import Layout from "../../components/layout";
+import Button from "../../components/button";
+import InputNumber from "../../components/inputNumber";
+import InputCode from "../../components/inputCode";
 
 const ConfirmationPage = () => {
     return (

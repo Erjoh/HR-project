@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const InputPassword = ({placeholder, onChange}) => {
+const InputPassword = ({placeholder}: {placeholder: string}) => {
     const [password, setPassword] = useState<string>('')
     const [isSecondSvgVisible, setSecondSvgVisible] = useState(false);
 

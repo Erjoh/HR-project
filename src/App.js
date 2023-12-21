@@ -6,7 +6,7 @@ import FAQ from "./pages/FAQ";
 import Contacts from "./pages/Contacts";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import ConfirmationPage from "./pages/ConfirmationPage";
+import ConfirmationPage from "./pages/ConfirmPage/ConfirmationPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
 
 const App = () => {
