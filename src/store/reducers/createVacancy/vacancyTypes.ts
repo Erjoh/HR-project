@@ -1,0 +1,15 @@
+export interface VacancyState {
+    position: string,
+    id: string,
+    aboutCompany: string,
+    neededPosHired: boolean,
+    industry: string,
+    vacancyDescription: string,
+    requiredSkills: string,
+    typeOfSalary: string,
+    valueOfSalary: string,
+    currencyOfSalary: string,
+    typeOfEmployment: string,
+    additionalInformation: string,
+    selectedExperience: string,
+}

@@ -1,10 +1,11 @@
 import React from 'react';
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 
 const Contacts = () => {
     return (
         <Layout>
-            <div></div>
+            <div>
+            </div>
         </Layout>
     );
 };

@@ -4,22 +4,29 @@ import HomePage from "./pages/HomePage";
 import Vacancies from "./pages/Vacancies";
 import FAQ from "./pages/FAQ";
 import Contacts from "./pages/Contacts";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignFieldsPage/SignIn";
+import SignUp from "./pages/SignFieldsPage/SignUp";
 import ConfirmationPage from "./pages/ConfirmPage/ConfirmationPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
+import {ROUTES} from "./utils/ROUTES";
+import CreateVacancyPage from "./pages/CreateVacancyPage";
+import CreateNewPasswordPage from "./pages/CreateNewPasswordPage";
+import PrivateOfficePage from "./pages/PrivateOfficePage";
 
 const App = () => {
     return (
         <Routes>
-            <Route path='/' element={<HomePage/>}/>
-            <Route path='/vacancies' element={<Vacancies/>}/>
-            <Route path='/frequentlyAskedQuestions' element={<FAQ/>}/>
-            <Route path='/contacts' element={<Contacts/>}/>
-            <Route path='/signIn' element={<SignIn/>}/>
-            <Route path='/signUp' element={<SignUp/>}/>
-            <Route path='/confirmationCode' element={<ConfirmationPage />}/>
-            <Route path='/passwordReset' element={<ResetPasswordPage />}/>
+            <Route path={ROUTES.HOME_PAGE} element={<HomePage/>}/>
+            <Route path={ROUTES.VACANCIES} element={<Vacancies/>}/>
+            <Route path={ROUTES.FAQ} element={<FAQ/>}/>
+            <Route path={ROUTES.CONTACTS} element={<Contacts/>}/>
+            <Route path={ROUTES.SIGN_IN} element={<SignIn/>}/>
+            <Route path={ROUTES.SIGN_UP} element={<SignUp/>}/>
+            <Route path={ROUTES.CONFIRMATION_PAGE} element={<ConfirmationPage/>}/>
+            <Route path={ROUTES.RESET_PASSWORD_PAGE} element={<ResetPasswordPage/>}/>
+            <Route path={ROUTES.CREATE_VACANCY_PAGE} element={<CreateVacancyPage/>}/>
+            <Route path={ROUTES.CREATE_NEW_PASSWORD} element={<CreateNewPasswordPage/>}/>
+            <Route path={ROUTES.PRIVATE_OFFICE} element={<PrivateOfficePage/>}/>
         </Routes>
     );
 };

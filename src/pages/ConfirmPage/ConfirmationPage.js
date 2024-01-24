@@ -1,32 +1,39 @@
 import React from 'react';
-import Layout from "../../components/layout";
 import Button from "../../components/button";
-import InputNumber from "../../components/inputNumber";
-import InputCode from "../../components/inputCode";
+import Header from "../../components/Layout/Header/header";
+// import {useSelector} from "react-redux";
 
 const ConfirmationPage = () => {
+    // const email = useSelector()
     return (
-        <Layout>
-            <div className={'flex justify-center'}>
-                <div className={'flex justify-center flex-col'}>
-                    <div className={'flex flex-col'}>
-                        <h3>Код подтверждения </h3>
+        <div>
+            <Header/>
+            <div className={'flex justify-center p-32'}>
+                <div className={'flex justify-center flex-col gap-14'}>
+                    <div className={'flex flex-col gap-14'}>
+                        <h3 className={'text-black font-inter text-4xl font-semibold'}>Код подтверждения</h3>
                         <p>
-                            Код отправлен на почту <span>nickname@mail.com</span>
+                            Код отправлен на почту <span>
+                            {/*`${email}`*/}
+                        </span>
                         </p>
-                        <div>
-                            <InputCode />
-                            <InputCode />
-                            <InputCode />
-                            <InputCode />
-                            <InputCode />
-                            <InputCode />
+                        <div className={'flex gap-4'}>
+                            {/*{userCode.map((value, index) => (*/}
+                            {/*    <InputCode*/}
+                            {/*        key={index}*/}
+                            {/*        value={value}*/}
+                            {/*        onChange={(e) => handleCodeChange(index, e.target.value)}*/}
+                            {/*    />*/}
+                            {/*))}*/}
                         </div>
                     </div>
-                    <Button name={'Подтвердить'}/>
+                    <Button
+                        className={'w-full rounded-full border-2 border-black p-4 shadow-md active:bg-blue-500 active:text-white active:border-blue-500'}>
+                        Подтвердить
+                    </Button>
                 </div>
             </div>
-        </Layout>
+        </div>
     );
 };
 
