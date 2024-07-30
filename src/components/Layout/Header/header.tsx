@@ -10,7 +10,7 @@ import NotificationIcon from "./Icons/notificationIcon";
 import DropdownAccount from "./Dropdown/dropdownAccount";
 
 const Header = () => {
-    const {isAuthed} = useAppSlice()
+    const {isAuth} = useAppSlice()
     return (
         <header className='flex items-center justify-between px-32 py-6 shadow-lg'>
             <div className="flex items-center justify-between gap-4 px-4">
@@ -20,13 +20,13 @@ const Header = () => {
                     </Link>
                 </div>
                 <nav className="flex gap-14 items-center pl-10 text-gray-500">
-                    {!isAuthed ? <Link to={ROUTES.VACANCIES}>Вакансии</Link> : null}
+                    {!isAuth ? <Link to={ROUTES.VACANCIES}>Вакансии</Link> : null}
                     <Link to={ROUTES.FAQ}>FAQ</Link>
                     <Link to={ROUTES.CONTACTS}>Контакты</Link>
                 </nav>
             </div>
             <div className="flex gap-8">
-                {isAuthed ?
+                {isAuth ?
                     <>
                         <div className={'flex items-center gap-8'}>
                             <Link to={''}>

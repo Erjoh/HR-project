@@ -10,11 +10,18 @@ const SelectIndustry = () => {
         dispatch(addIndustry(e.target.value))
     }
     return (
-        <select onChange={handleChange} className={'w-full p-4 bg-white border border-gray rounded'} name="position"
-                value={industry} id="position">
-            <option value="" disabled selected hidden>-Выберите-</option>
-            <option value=""></option>
-        </select>
+        <div>
+            <h3 className={'font-inter text-1xl font-bold'}>Отрасль
+                <span
+                    className={'text-red-600'}>*
+                    </span>
+            </h3>
+            <select onChange={handleChange} className={'w-full p-4 bg-white border border-gray rounded'} name="position"
+                    value={industry} id="position">
+                <option value="" disabled selected hidden>-Выберите-</option>
+                <option value=""></option>
+            </select>
+        </div>
     );
 };
 

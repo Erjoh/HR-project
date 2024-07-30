@@ -1,17 +1,17 @@
 import React from 'react';
+import InputCountry from "./inputs/inputCountry";
+import InputCity from "./inputs/inputCity";
+import InputAddress from "./inputs/inputAddress";
 
 const ContactInformation = () => {
     return (
-        <div className={'w-full flex gap-4 flex-col'}>
-            <select className={'p-4 bg-white border border-gray rounded'} name="position" id="position">
-                <option value="" disabled selected hidden>-Выберите-</option>
-                <option value="">Бухгалтер</option>
-            </select>
-            <select className={'p-4 bg-white border border-gray rounded'} name="position" id="position">
-                <option value="" disabled selected hidden>-Выберите-</option>
-                <option value="">Бухгалтер</option>
-            </select>
-            <input className={'border border-gray p-4 rounded'} type="text"/>
+        <div className={'w-full'}>
+            <h3 className={'font-inter text-1xl font-bold gap-4 flex flex-col'}>Контактная информация</h3>
+            <div className={'flex gap-4 flex-col'}>
+                <InputCountry/>
+                <InputCity/>
+                <InputAddress/>
+            </div>
         </div>
     );
 };

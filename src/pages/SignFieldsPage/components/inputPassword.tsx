@@ -1,5 +1,4 @@
-import React, {ChangeEvent, ChangeEventHandler, useState} from 'react';
-import {useDispatch} from "react-redux";
+import React, {ChangeEventHandler, useState} from 'react';
 
 const InputPassword = ({onChange,placeholder}: { onChange: ChangeEventHandler<HTMLInputElement>, placeholder: string }) => {
     const [isSecondSvgVisible, setSecondSvgVisible] = useState(false);

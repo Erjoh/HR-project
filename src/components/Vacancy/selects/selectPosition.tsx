@@ -12,13 +12,20 @@ const SelectPosition = () => {
         dispatch(addPosition(e.target.value))
     }
     return (
-        <select onChange={handleChange} className={'w-full p-4 bg-white border border-gray rounded'} name="position"
-                value={position} id="position">
-            <option defaultValue='-Выберите-' disabled selected hidden>-Выберите-</option>
+        <div>
+            <h3 className={'font-inter text-1xl font-bold'}>Позиция
+                <span
+                    className={'text-red-600'}>*
+                        </span>
+            </h3>
+            <select onChange={handleChange} className={'w-full p-4 bg-white border border-gray rounded'} name="position"
+                    value={position} id="position">
+                <option defaultValue='-Выберите-' disabled selected hidden>-Выберите-</option>
 
-            {/*сделать имплементацию с бекенда*/}
-            <option value="-Выберите-">-Выберите-</option>
-        </select>
+                {/*сделать имплементацию с бекенда*/}
+                <option value="-Выберите-">-Выберите-</option>
+            </select>
+        </div>
     );
 };
 

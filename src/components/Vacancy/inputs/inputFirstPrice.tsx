@@ -1,12 +1,12 @@
 import React, {ChangeEvent} from 'react';
 import {useDispatch} from "react-redux";
-import {addValueOfSalary} from "../../../store/reducers/createVacancy/vacancySlice";
+import {addFirstPrice} from "../../../store/reducers/createVacancy/vacancySlice";
 
-const InputSalaryValue = () => {
+const InputFirstPrice = () => {
     const dispatch = useDispatch()
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        dispatch(addValueOfSalary(e.target.value))
+        dispatch(addFirstPrice(e.target.value))
     }
 
     return (
@@ -17,4 +17,4 @@ const InputSalaryValue = () => {
     );
 };
 
-export default InputSalaryValue;
+export default InputFirstPrice;

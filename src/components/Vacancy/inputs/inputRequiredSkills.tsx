@@ -10,11 +10,19 @@ const InputRequiredSkills = () => {
     }
 
     return (
-        <input
-            className={'w-full border border-gray p-4 rounded'}
-            onChange={handleChange}
-            type="text"/>
-    );
+        <div>
+            <h3 className={'font-inter text-1xl font-bold'}>Требуемые навыки
+                <span
+                    className={'text-red-600'}>*
+                    </span>
+            </h3>
+            <input
+                className={'w-full border border-gray p-4 rounded'}
+                onChange={handleChange}
+                type="text"/>
+        </div>
+    )
+        ;
 };
 
 export default InputRequiredSkills;

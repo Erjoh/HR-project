@@ -11,13 +11,21 @@ const SelectTypeOfEmployment = () => {
         dispatch(addTypeOfEmployment(e.target.value))
     }
     return (
-        <select onChange={handleChange} className={'w-full p-4 bg-white border border-gray rounded'} name="position"
-                value={typeOfEmployment} id="position">
-            <option defaultValue='-Выберите-' disabled selected hidden>-Выберите-</option>
-            {/*сделать имплементацию с бекенда*/}
-            <option value=""></option>
-        </select>
-    );
+        <div>
+            <h3 className={'font-inter text-1xl font-bold'}>Вид занятости
+                <span
+                    className={'text-red-600'}>*
+                    </span>
+            </h3>
+            <select onChange={handleChange} className={'w-full p-4 bg-white border border-gray rounded'} name="position"
+                    value={typeOfEmployment} id="position">
+                <option defaultValue='-Выберите-' disabled selected hidden>-Выберите-</option>
+                {/*сделать имплементацию с бекенда*/}
+                <option value=""></option>
+            </select>
+        </div>
+    )
+        ;
     // return (
     //     <select className={'p-4 bg-white border border-gray w-2/5'} name="position" id="position">
     //         <option value="" disabled selected hidden>-Выберите-</option>

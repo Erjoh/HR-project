@@ -1,15 +1,24 @@
 export interface VacancyState {
+    vacancyAdded: boolean,
     position: string,
     id: string,
-    aboutCompany: string,
+    description: string,
     neededPosHired: boolean,
     industry: string,
-    vacancyDescription: string,
-    requiredSkills: string,
-    typeOfSalary: string,
-    valueOfSalary: string,
-    currencyOfSalary: string,
+    descriptionVacancy: string,
+    skills: string,
+    salaryResponse: {
+        firstPrice: string,
+        last: string,
+        valuta: string,
+        fixed: string
+    },
     typeOfEmployment: string,
+    contactInformationRequest: {
+        country: string,
+        city: string,
+        address: string,
+    }
+    experience: string,
     additionalInformation: string,
-    selectedExperience: string,
 }

@@ -4,23 +4,16 @@ import {addAdditionalInformation} from "../../../store/reducers/createVacancy/va
 
 const InputAdditionalInformation = () => {
     const dispatch = useDispatch()
-
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         dispatch(addAdditionalInformation(e.target.value))
     }
-
     return (
-        <input
-            className={'w-full border border-gray p-4 rounded'}
-            onChange={handleChange}
-            type="text"/>
+        <div>
+            <h3 className={'font-inter text-1xl font-bold'}>Дополнительная информация</h3>
+            <input onChange={handleChange} className={'w-full border border-gray p-4 rounded overflow-auto'}
+                   type="text"/>
+        </div>
     );
-    // return (
-    //     <input
-    //         className={'w-2/5 border border-gray p-4'}
-    //         onChange={(e => (e.target.value))}
-    //         type="text"/>
-    // );
 };
 
 export default InputAdditionalInformation;

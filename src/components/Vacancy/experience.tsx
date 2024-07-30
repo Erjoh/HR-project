@@ -24,12 +24,17 @@ const MOCKED_EXPERIENCE = [
 
 const Experience = () => {
     const dispatch = useDispatch();
-    const checkedExperience = useSelector((state: RootState) => state.vacancy.selectedExperience)
+    const checkedExperience = useSelector((state: RootState) => state.vacancy.experience)
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         dispatch(addSelectedExperience(e.target.value))
     }
     return (
         <div>
+            <h3 className={'font-inter text-1xl font-bold'}>Опыт работы/стаж
+                <span
+                    className={'text-red-600'}>*
+                    </span>
+            </h3>
             {
                 MOCKED_EXPERIENCE.map((item, index) => (
                     <div key={index} className={'flex items-center gap-2 py-1 font-inter text-balance'}>

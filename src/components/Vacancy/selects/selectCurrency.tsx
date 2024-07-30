@@ -5,7 +5,7 @@ import {addCurrencyOfSalary} from "../../../store/reducers/createVacancy/vacancy
 
 const SelectCurrency = () => {
     const dispatch = useDispatch()
-    const currencyOfSalary = useSelector((state: RootState) => state.vacancy.currencyOfSalary)
+    const currencyOfSalary = useSelector((state: RootState) => state.vacancy.salaryResponse.valuta)
 
     const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
         dispatch(addCurrencyOfSalary(e.target.value))

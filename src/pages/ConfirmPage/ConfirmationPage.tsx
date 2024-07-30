@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from "../../components/button";
 import Header from "../../components/Layout/Header/header";
-// import {useSelector} from "react-redux";
+import InputCode from "./components/inputCode";
+
 
 const ConfirmationPage = () => {
-    // const email = useSelector()
     return (
         <div>
             <Header/>
@@ -13,18 +13,13 @@ const ConfirmationPage = () => {
                     <div className={'flex flex-col gap-14'}>
                         <h3 className={'text-black font-inter text-4xl font-semibold'}>Код подтверждения</h3>
                         <p>
-                            Код отправлен на почту <span>
-                            {/*`${email}`*/}
-                        </span>
+                            Код отправлен на почту
+                            <span>
+                                {/*`${email}`*/}
+                            </span>
                         </p>
                         <div className={'flex gap-4'}>
-                            {/*{userCode.map((value, index) => (*/}
-                            {/*    <InputCode*/}
-                            {/*        key={index}*/}
-                            {/*        value={value}*/}
-                            {/*        onChange={(e) => handleCodeChange(index, e.target.value)}*/}
-                            {/*    />*/}
-                            {/*))}*/}
+                            <InputCode/>
                         </div>
                     </div>
                     <Button
